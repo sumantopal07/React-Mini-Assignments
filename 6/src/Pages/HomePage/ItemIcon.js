@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const ItemIcon = ({data}) => {
     return (
-        <div className="cocktails-center">
         <article className="cocktail">
             <div className="img-container">
                 <img src={data.strDrinkThumb} alt="A1" />
@@ -14,7 +13,6 @@ const ItemIcon = ({data}) => {
                 <Link className="btn btn-primary btn-details" data={data} to={`/cocktail/${data.idDrink}`} >details</Link>
             </div>
         </article>
-    </div>
     );
 };
 export default ItemIcon;
